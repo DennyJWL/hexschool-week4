@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+a, a:hover, a:visited, a:link, a:active ,ul ,li{
+  color: $white;
+  text-decoration:none;
+  outline: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  line-height: 1.5;
+}
+label,input{
+  display: block;
+}
+textarea{
+  resize: none;
+}
+span{
+  display: inline-block;
+}
+.header-bg{
+  background-image: url('../images/home-header-sm.png');
+  height: 396px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  h1{
+    margin-bottom: 10px;
+  }
+}
+@media (min-width:768px){
+  .header-bg{
+    height: 787px;
+    p{
+      font-size: 36px;
+    }
+    h1{
+      font-size: 64px !important;
+    }
+  }
+  nav{
+    .navbar-item{
+      border: 0 !important;
+      width: 100% !important;
+      a{
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@media (min-width:992px){
+  .header-bg{
+    background-image: url('../images/home-header.png');
+  }
+}
+section{
+  .jointly{
+    background-image: url('../images/index-bg-sm.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .recommend{
+    .card{
+      box-shadow: 0px 2px 6px #00000029;
+    }
+  }
+  .contact{
+    input,textarea{
+      &::placeholder{
+        opacity: 0.2;
+      }
+    }
+    input{
+      border: 1px solid #000;
+    }
+  }
+  .checkbox{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+}
+@media (min-width:768px){
+  section{
+    .jointly{
+      background-image: url('../images/index-bg-md.png');
+    }
+  }
+  footer{
+    .mail,.phone{
+      font-size: 36px;
+    }
+    .privacy{
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width:992px){
+  section{
+    .jointly{
+      background-image: url('../images/index-bg.png');
+    }
+  }
+  footer{
+    .icon{
+      width: 48px;
+    }
+  }
+}
